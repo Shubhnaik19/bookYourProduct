@@ -1,5 +1,5 @@
 ## BOOK MY PRODUCT
-Its is the simple app where you can search product according to availability and then check its details rentals and pricing.![Screenshot from 2021-07-25 02-32-19](https://user-images.githubusercontent.com/44295222/126881033-7b2454ce-d2f2-402a-81f5-653475898cc7.png)
+It is an app where you can search product according to availability and then check its details rentals and pricing.![Screenshot from 2021-07-25 02-32-19](https://user-images.githubusercontent.com/44295222/126881033-7b2454ce-d2f2-402a-81f5-653475898cc7.png)
 No bootStrap or any kindoff UI library is used to make this project as of now.
 ![Screenshot from 2021-07-25 02-34-03](https://user-images.githubusercontent.com/44295222/126881065-564a117a-9349-4c4e-be6f-7568d9b8c9c3.png)
 
