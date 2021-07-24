@@ -1,0 +1,30 @@
+.warning{
+    color:red;
+}
+.success{
+    color:green;
+}
+.ModalWindow{
+    height:400px;
+    width:400px;
+    margin: auto;
+    background-color:white;
+    .ModalContent{
+        margin: auto;
+        margin-top: 10rem;
+        background-color:white;
+            display:grid;
+        .modalHeading{
+            color:white;
+            background-color:rgb(38, 134, 224);
+            width:inherit;
+        }
+    }
+    .buttons{
+        display:flex;
+        margin: auto;
+        padding-left: 1rem;
+    }
+    
+}
+

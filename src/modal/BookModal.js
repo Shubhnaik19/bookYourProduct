@@ -1,13 +1,28 @@
 import React, { useState } from "react";
 import ProductDetails from "../data/productDetails.json";
 import Modal from "react-modal";
-import "./_modalWindow.css";
+import "../style/_bookModal.scss";
 import BillingDetails from "../components/billingDetails"
 
 function BookModal({ closeModal }) {
   const [toDate, setToDate] = useState("");
   const [fromDate, setFromDate] = useState("");
   const [productDetails, setProduct] = useState("");
+  const getTodaysDate = () => {
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth()+1;
+    let day = date.getDate();
+    let todaysDate = '';
+    if(month < 10) {
+      todaysDate = year+'-0'+month+'-'+day;
+    }
+    else {
+      todaysDate = year+'-'+month+'-'+day;
+    }
+    return todaysDate;
+
+  }
   const calculateDays = (toDate, fromDate) => {
     return (
       (new Date(toDate).getTime() - new Date(fromDate).getTime()) /
@@ -17,7 +32,8 @@ function BookModal({ closeModal }) {
   return (
     <Modal className="ModalWindow" isOpen={true}>
       <div className="ModalContent">
-        <h1>Book Product</h1>
+        <div className='modalHeading'><h1>Book Product</h1></div>
+        Select Product:-
         <select
           onChange={(event) => {
             setProduct(event.target.value);
@@ -40,6 +56,7 @@ function BookModal({ closeModal }) {
           onChange={(event) => {
             setFromDate(event.target.value);
           }}
+          min={getTodaysDate()}
         ></input>
         To
         <input
@@ -47,19 +64,14 @@ function BookModal({ closeModal }) {
           onChange={(event) => {
             setToDate(event.target.value);
           }}
+          min={getTodaysDate()}
         ></input>
-        <div>
-          <span>
+        <div className='warning'>
             {toDate && calculateDays(toDate, fromDate) < 0
               ? "To date cannot be less than from date"
               : ""}
-          </span>
         </div>
-        <BillingDetails product={productDetails} days={calculateDays(toDate, fromDate)}/>
-          <div className="buttons">
-          <button onClick={() => closeModal(false)}>Book</button>
-          <button onClick={() => closeModal(false)}>Back</button>
-          </div>
+        <BillingDetails product={productDetails} days={calculateDays(toDate, fromDate)} closeModal={closeModal}/>
       </div>
     </Modal>
   );

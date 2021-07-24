@@ -1,14 +1,15 @@
 import { useState } from "react";
-import "./App.css";
+import "./_app.scss"
 import ProductDetails from "./data/productDetails.json";
 import BookModal from "./modal/BookModal";
 
-function App() {
+function App() {  
   const [modalOpen, setModalIsOpen] = useState(false);
   const [searchAnything, setSearch] = useState("");
   const [availability, setAvailability] = useState(false);
   return (
-    <div className="App">
+    <div className="App"><div className='navbar'><h1>Book My product</h1></div>
+      <div className="mainContent">
       <input
         type="text"
         placeholder={"Search by Name or Code"}
@@ -16,13 +17,13 @@ function App() {
           setSearch(event.target.value);
         }}
       />
-      Show only available productDetail:<input type='checkbox' onChange={()=>{availability?setAvailability(false):setAvailability(true)}}></input>
+      Availability:<input type='checkbox' onChange={()=>{availability?setAvailability(false):setAvailability(true)}}></input>
       {modalOpen && <BookModal closeModal={setModalIsOpen}></BookModal>}
-      <table><tr>
+      <div className='productTable'><table><tr>
         <th>Name</th>
         <th>Code</th>
         <th>Availability</th>
-        <th>Need to </th>
+        <th>Need to Repair </th>
         <th>Durability</th>
         <th>Mileage</th>
         </tr>
@@ -55,8 +56,16 @@ function App() {
           );
         })}
       </table>
-      <button onClick={() => setModalIsOpen(true)}>Book</button>
-      <button onClick={() => {setSearch('') }}>Clear Search</button>
+      </div>
+      <div className='buttons'>
+      <button id='bookButton' onClick={() => setModalIsOpen(true)}>Book</button>
+      <button id='clearButton'onClick={() => {setSearch('') }}>Clear Search</button>
+      </div>
+    </div>
+    <footer><h1>
+      BookMyProduct.com
+      </h1>
+    </footer>
     </div>
   );
 }
