@@ -1,7 +1,25 @@
-# Getting Started with Create React App
+## BOOK MY PRODUCT
+Its is the simple app where you can search product according to availability and then check its details rentals and pricing.![Screenshot from 2021-07-25 02-32-19](https://user-images.githubusercontent.com/44295222/126881033-7b2454ce-d2f2-402a-81f5-653475898cc7.png)I
+I have not used any kindoff bootStrap or UI librabry to make it.
+![Screenshot from 2021-07-25 02-34-03](https://user-images.githubusercontent.com/44295222/126881065-564a117a-9349-4c4e-be6f-7568d9b8c9c3.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Uses
+* User can check availability of product easily.
+* User can check rents and prizing of available products.
+* User can book product id available.
+* ![Screenshot from 2021-07-25 02-37-47](https://user-images.githubusercontent.com/44295222/126881100-9f346c41-3f35-4e91-a5a8-15c61c628641.png)
 
+## Features and validations
+* User cannot select past dates.
+* User cannot select products those are not available.
+* User cannot select product if days selected is less than the minimum rental period.
+* Error popsUp in these cases.![Screenshot from 2021-07-25 02-41-34](https://user-images.githubusercontent.com/44295222/126881169-badb46c7-387f-4a92-841b-a1dd86ff1573.png)
+![Screenshot from 2021-07-25 02-42-43](https://user-images.githubusercontent.com/44295222/126881178-2e717552-8322-4fa8-ab3b-f74501b6633d.png)
+
+##About me (Author):-
+I am Shubham Naik. I am budding fullStack developer. I wanna explore every aspect of development thats why I am continuosly in learning phase. I come from Electronics background, still as I have passion to learn programming I used to code on C then eventually switched to Java and learnt J2EE development. And now I am working on Kotlin and frameworks like Spring, Spring Boot and FrontEnd FrameWorks like reactJs. This shows how keen learner I am and my learning capability.
+My github :- https://github.com/Shubhnaik19
+My linkedIn :- https://www.linkedin.com/in/shubham-n-17148b92/
 ## Available Scripts
 
 In the project directory, you can run:
