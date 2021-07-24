@@ -1,12 +1,12 @@
 ## BOOK MY PRODUCT
-Its is the simple app where you can search product according to availability and then check its details rentals and pricing.![Screenshot from 2021-07-25 02-32-19](https://user-images.githubusercontent.com/44295222/126881033-7b2454ce-d2f2-402a-81f5-653475898cc7.png)I
-I have not used any kindoff bootStrap or UI librabry to make it.
+Its is the simple app where you can search product according to availability and then check its details rentals and pricing.![Screenshot from 2021-07-25 02-32-19](https://user-images.githubusercontent.com/44295222/126881033-7b2454ce-d2f2-402a-81f5-653475898cc7.png)
+No bootStrap or any kindoff UI library is used to make this project as of now.
 ![Screenshot from 2021-07-25 02-34-03](https://user-images.githubusercontent.com/44295222/126881065-564a117a-9349-4c4e-be6f-7568d9b8c9c3.png)
 
 ## Uses
 * User can check availability of product easily.
 * User can check rents and prizing of available products.
-* User can book product id available.
+* User can book product if available.
 * ![Screenshot from 2021-07-25 02-37-47](https://user-images.githubusercontent.com/44295222/126881100-9f346c41-3f35-4e91-a5a8-15c61c628641.png)
 
 ## Features and validations
@@ -17,14 +17,13 @@ I have not used any kindoff bootStrap or UI librabry to make it.
 * Error popsUp in these cases.![Screenshot from 2021-07-25 02-41-34](https://user-images.githubusercontent.com/44295222/126881169-badb46c7-387f-4a92-841b-a1dd86ff1573.png)![Screenshot from 2021-07-25 02-50-58](https://user-images.githubusercontent.com/44295222/126881305-7c9f338e-8f11-42b8-90e8-751653b821eb.png)
 
 ## Future Enhancements
-* This is kindoff unfinished app.
-* So we can use redux store to save some complexity.
+* We can use redux-store to save some complexity.
 * Also we can route multiple pages for buying products.
 * We can use multiple criteria for search and sorting.
-* Can make use more good looking using material UI.
+* Can make it more good looking and user friendly using material UI.
 
 ## About me (Author):-
-I am **Shubham Naik**. I am budding fullStack developer. I wanna explore every aspect of development thats why I am continuosly in learning phase. I come from Electronics background, still as I have passion to learn programming I used to code on C then eventually switched to Java and learnt J2EE development. And now I am working on Kotlin and frameworks like Spring, Spring Boot and FrontEnd FrameWorks like reactJs. This shows how keen learner I am and my learning capability.
+I am **Shubham Naik**. I am budding fullStack developer. I wanna explore every aspect of web - development thats why I am continuosly working on new stuff. I come from Electronics background, still as I have passion to learn programming, I used to code on C then eventually switched to Java and learnt J2EE development. And now I am working on Kotlin and frameworks like Spring, Spring Boot and FrontEnd FrameWorks like reactJs. This shows how keen learner I am and proves my learning capability.
 My github :- https://github.com/Shubhnaik19
 My linkedIn :- https://www.linkedin.com/in/shubham-n-17148b92/
 ## Available Scripts
