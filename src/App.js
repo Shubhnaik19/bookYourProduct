@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./_app.scss"
+import "./style/_app.scss"
 import ProductDetails from "./data/productDetails.json";
-import BookModal from "./modal/BookModal";
+import BookModal from "./components/bookProductModal";
 
 function App() {  
   const [modalOpen, setModalIsOpen] = useState(false);

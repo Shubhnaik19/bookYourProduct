@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProductDetails from "../data/productDetails.json";
 import Modal from "react-modal";
 import "../style/_bookModal.scss";
-import BillingDetails from "../components/billingDetails"
+import BillingDetails from "./billingDetails"
 
 function BookModal({ closeModal }) {
   const [toDate, setToDate] = useState("");
